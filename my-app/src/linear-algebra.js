@@ -26,7 +26,7 @@ function angleBetween(v1, v2) {
 }
 
 //module.exports = angleBetween;
-export {angleBetween};
+export { angleBetween };
 
 const vec1 = [1, 2, 3];
 const vec2 = [-1, -2, -3];

@@ -1,5 +1,3 @@
-import {angleBetween} from './linear-algebra.js';
-
 export const cake_recipe = {
     name: 'Cake',
     baking_powder_tsp: 1.75,
@@ -32,9 +30,9 @@ export const cake_recipe = {
     5. Pour batter into the prepared cake pan. \
     6. Bake in the preheated oven until the top springs back when lightly touched, 30 to 40 minutes. \
     7. Remove from the oven and cool completely."
-  };
+};
 
-  export const cupcake_recipe = {
+export const cupcake_recipe = {
     name: 'Cupcake',
     baking_powder_tsp: 3,
     baking_soda_tsp: 0,
@@ -66,17 +64,16 @@ export const cake_recipe = {
     5. Slowly add the water to the batter and mix on low speed until well combined. Scrape down the sides of the bowl as needed to make sure everything is well combined. Please note that the batter will be very thin.\
     6. Fill the cupcake liners about half way and bake for 15-17 minutes, or until a toothpick comes out with a few moist crumbs. \
     7. Remove the cupcakes from oven and allow to cool for 2 minutes, then remove to a cooling rack to finish cooling."
-  };
+};
 
-  export const all_recipes = [cake_recipe, cupcake_recipe];
+export const all_recipes = [cake_recipe, cupcake_recipe];
 
 
 function convertRecipe(recipe) {
     return [recipe.baking_powder_tsp, recipe.baking_soda_tsp, recipe.brown_sugar_cups, recipe.butter_tbsp, recipe.choco_chips_cups,
-      recipe.cinnamon_tsp, recipe.cream_tartar_tsp, recipe.cocoa_powder_cups, recipe.cornstarch_tbsp, recipe.eggs_num, recipe.flour_cups,
-      recipe.ginger_tsp, recipe.honey_tbsp, recipe.milk_cups, recipe.nutmeg_tsp, recipe.nuts_cups, recipe.oats_cups, recipe.oil_tbsp,
-      recipe.raisins_cups, recipe.salt_tsp, recipe.sugar_cups, recipe.vanilla_tsp, recipe.water_cups];
-  }
+    recipe.cinnamon_tsp, recipe.cream_tartar_tsp, recipe.cocoa_powder_cups, recipe.cornstarch_tbsp, recipe.eggs_num, recipe.flour_cups,
+    recipe.ginger_tsp, recipe.honey_tbsp, recipe.milk_cups, recipe.nutmeg_tsp, recipe.nuts_cups, recipe.oats_cups, recipe.oil_tbsp,
+    recipe.raisins_cups, recipe.salt_tsp, recipe.sugar_cups, recipe.vanilla_tsp, recipe.water_cups];
+}
 
-  console.log(convertRecipe(cake_recipe));
-  console.log(angleBetween(convertRecipe(cake_recipe), convertRecipe(cupcake_recipe)));
+export const all_recipes_vectors = all_recipes.map(convertRecipe);
