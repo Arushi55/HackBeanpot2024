@@ -5,6 +5,7 @@ export default function MyApp() {
   return (
     <div>
       <Recipe />
+      <></>
     </div>
   );
 }
