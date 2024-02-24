@@ -1,8 +1,6 @@
-import './recipe.css';
-<<<<<<< HEAD
 import {angleBetween} from './linear-algebra.js';
 
-const cake_recipe = {
+export const cake_recipe = {
     name: 'Cake',
     baking_powder_tsp: 1.75,
     baking_soda_tsp: 0,
@@ -36,7 +34,7 @@ const cake_recipe = {
     7. Remove from the oven and cool completely."
   };
 
-  const cupcake_recipe = {
+  export const cupcake_recipe = {
     name: 'Cupcake',
     baking_powder_tsp: 3,
     baking_soda_tsp: 0,
@@ -70,56 +68,15 @@ const cake_recipe = {
     7. Remove the cupcakes from oven and allow to cool for 2 minutes, then remove to a cooling rack to finish cooling."
   };
 
-  const all_recipes = [cake_recipe, cupcake_recipe];
+  export const all_recipes = [cake_recipe, cupcake_recipe];
 
-=======
-import { all_recipes} from "./recipe-conversion.js";
-  
->>>>>>> 32ae311b9e4477c5c3625539318a2b190125ada2
-  function Item({value, name}) {
-    if (value != 0) {
-      return <li className ="ingredients">{name}: {value}</li>;
-    }
+
+function convertRecipe(recipe) {
+    return [recipe.baking_powder_tsp, recipe.baking_soda_tsp, recipe.brown_sugar_cups, recipe.butter_tbsp, recipe.choco_chips_cups,
+      recipe.cinnamon_tsp, recipe.cream_tartar_tsp, recipe.cocoa_powder_cups, recipe.cornstarch_tbsp, recipe.eggs_num, recipe.flour_cups,
+      recipe.ginger_tsp, recipe.honey_tbsp, recipe.milk_cups, recipe.nutmeg_tsp, recipe.nuts_cups, recipe.oats_cups, recipe.oil_tbsp,
+      recipe.raisins_cups, recipe.salt_tsp, recipe.sugar_cups, recipe.vanilla_tsp, recipe.water_cups];
   }
 
-  export default function Recipe() {
-    return (
-<<<<<<< HEAD
-      all_recipes.map(recipe =>
-      <>
-        <h1 className="recipe-name"> {recipe.name}</h1>
-=======
-      all_recipes.map(recipe => <>
-        <h1 className="recipe-name">{recipe.name}</h1>
->>>>>>> 32ae311b9e4477c5c3625539318a2b190125ada2
-        <div className="recipe">
-            <Item value={recipe.baking_powder_tsp} name="Baking Powder (tsp)"/>
-            <Item value={recipe.baking_soda_tsp} name="Baking Soda (tsp)"/>
-            <Item value={recipe.brown_sugar_cups} name="Brown Sugar (cups)"/>
-            <Item value={recipe.butter_tbsp} name="Butter (tbsp)"/>
-            <Item value={recipe.choco_chips_cups} name="Chocolate Chips (cups)"/>
-            <Item value={recipe.cinnamon_tsp} name="Cinnamon (tsp)"/>
-            <Item value={recipe.cream_tartar_tsp} name="Cream of Tartar (tsp)"/>
-            <Item value={recipe.cocoa_powder_cups} name="Cocoa Powder (cups)"/>
-            <Item value={recipe.cornstarch_tbsp} name="Cornstarch (tbsp)"/>
-            <Item value={recipe.eggs_num} name="Eggs"/>
-            <Item value={recipe.flour_cups} name="Flour (cups)"/>
-            <Item value={recipe.ginger_tsp} name="Ginger (tsp)"/>
-            <Item value={recipe.honey_tbsp} name="Honey (tbsp):"/>
-            <Item value={recipe.milk_cups} name="Milk (cups)"/>
-            <Item value={recipe.nutmeg_tsp} name="Nutmeg (tsp)"/>
-            <Item value={recipe.nuts_cups} name="Nuts (cups)"/>
-            <Item value={recipe.oats_cups} name="Oats (cups)"/>
-            <Item value={recipe.oil_tbsp} name="Oil (tbsp)"/>
-            <Item value={recipe.raisins_cups} name="Raisins (cups)"/>
-            <Item value={recipe.salt_tsp} name="Salt (tsp)"/>
-            <Item value={recipe.sugar_cups} name="Sugar (cups)"/>
-            <Item value={recipe.vanilla_tsp} name="Vanilla (tsp)"/>
-            <Item value={recipe.water_cups} name="Water (cups)"/>
-            <br></br>
-            <li>Steps: {recipe.steps}</li>
-        </div>
-      </>)
-    );
-  }
-  
+  console.log(convertRecipe(cake_recipe));
+  console.log(angleBetween(convertRecipe(cake_recipe), convertRecipe(cupcake_recipe)));

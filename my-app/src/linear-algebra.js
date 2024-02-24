@@ -20,9 +20,13 @@ function mag(v) {
     return Math.sqrt(sum);
 }
 
-export function angleBetween(v1, v2) {
+//export default 
+function angleBetween(v1, v2) {
     return Math.acos(dot(v1, v2) / (mag(v1) * mag(v2)));
 }
+
+//module.exports = angleBetween;
+export {angleBetween};
 
 const vec1 = [1, 2, 3];
 const vec2 = [-1, -2, -3];
