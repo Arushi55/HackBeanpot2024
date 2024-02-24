@@ -2,7 +2,7 @@ import './recipe.css';
 import {all_recipes} from "./recipe-conversion.js";
   
   function Item({value, name}) {
-    if (value != 0) {
+    if (value !== 0) {
       return <li className ="ingredients">{name}: {value}</li>;
     }
   }
@@ -10,7 +10,7 @@ import {all_recipes} from "./recipe-conversion.js";
   export default function Recipe() {
     return (
       all_recipes.map(recipe =>
-      <>
+      <div className="recipe-wrapper">
         <h1 className="recipe-name"> {recipe.name}</h1>
         <div className="recipe">
             <Item value={recipe.baking_powder_tsp} name="Baking Powder (tsp)"/>
@@ -37,8 +37,9 @@ import {all_recipes} from "./recipe-conversion.js";
             <Item value={recipe.vanilla_tsp} name="Vanilla (tsp)"/>
             <Item value={recipe.water_cups} name="Water (cups)"/>
             <br></br>
-            <li>Steps: {recipe.steps}</li>
+            <h3>Steps:</h3>
+            <li>{recipe.steps}</li>
         </div>
-      </>)
+      </div>)
     );
   }

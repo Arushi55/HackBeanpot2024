@@ -1,7 +1,7 @@
 function dot(v1, v2) {
     var sum = 0;
 
-    if (v1.length == v2.length) {
+    if (v1.length === v2.length) {
         v1.forEach((element, idx) => {
             sum += element * v2[idx];
         });
