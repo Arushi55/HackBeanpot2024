@@ -1,9 +1,10 @@
-import { all_recipes_vectors } from './recipe-conversion.js';
+import { convertRecipe } from './recipe-conversion.js';
 import { angleBetween } from './linear-algebra.js';
 
 
+
 function sortRecipes(searchVector) {
-    return all_recipes_vectors.sort(function (a, b) { return (angleBetween(a, searchVector)) - (angleBetween(b, searchVector)) }
+    return all_recipes.sort(function (a, b) { return (angleBetween(convertRecipe(a), searchVector)) - (angleBetween(convertRecipe(b), searchVector)) }
     );
 }
 /*
