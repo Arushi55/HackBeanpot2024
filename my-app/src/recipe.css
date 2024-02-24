@@ -1,3 +1,19 @@
 .recipe {
-    margin-left: .5;
+    margin: 2.5%;
+    font-family: Helvetica, sans-serif;
+    font-size: 50%;
+    padding: 5px;
+    background-color: rgb(209, 201, 201);
+    opacity: 0.2;
+}
+
+.ingredients {
+    margin: 2.5%
+}
+
+.recipe-name {
+    margin: 2.5%;
+    font-family: Helvetica, san-serif;
+    font-size: 2rem;
+    color: rgb(77, 60, 60);
 }

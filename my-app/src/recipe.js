@@ -1,5 +1,5 @@
 import './recipe.css';
-import './linear-algebra.js';
+import {angleBetween} from './linear-algebra.js';
 
 const cake_recipe = {
     name: 'Cake',
@@ -73,7 +73,7 @@ const cake_recipe = {
 
   function Item({value, name}) {
     if (value != 0) {
-      return <li>{name}: {value}</li>;
+      return <li className ="ingredients">{name}: {value}</li>;
     }
   };
 
@@ -89,9 +89,10 @@ const cake_recipe = {
 
   export default function Recipe() {
     return (
-      all_recipes.map(recipe => <>
-        <h1>{recipe.name}</h1>
-        <div className="recipe"/>
+      all_recipes.map(recipe =>
+      <>
+        <h1 className="recipe-name"> {recipe.name}</h1>
+        <div className="recipe">
             <Item value={recipe.baking_powder_tsp} name="Baking Powder (tsp)"/>
             <Item value={recipe.baking_soda_tsp} name="Baking Soda (tsp)"/>
             <Item value={recipe.brown_sugar_cups} name="Brown Sugar (cups)"/>
@@ -117,8 +118,8 @@ const cake_recipe = {
             <Item value={recipe.water_cups} name="Water (cups):"/>
             <br></br>
             <li>Steps: {recipe.steps}</li>
-        <div/>
+        </div>
       </>)
     );
   }
- 
+  
