@@ -1,11 +1,12 @@
 import React from 'react';
+import { sortRecipes } from './sort-method.js';
 
 const Search = () => {
     const QuantityBox = ({name, unit, id}) => {
         return (
             <label>
                 What is the amount of <b>{name}</b> you have (in {unit})? 
-                <input name={name} type="text" inputMode="numeric" placeholder="0" onChange={handleChange} id={id}/>
+                <input name={name} type="number" inputMode="numeric" placeholder="0" onChange={handleChange} id={id}/>
             </label>
         )
       }
@@ -20,6 +21,11 @@ const Search = () => {
         inputs[event.target.id] = Number(event.target.value);
         console.log(inputs);
     };
+
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      console.log(sortRecipes(inputs));
+    }
 
     return (
       <form>
