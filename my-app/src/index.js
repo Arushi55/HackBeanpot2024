@@ -4,13 +4,7 @@ import './index.css';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals.js';
 import './recipe.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-<<<<<<< Updated upstream
-=======
-const bullet = <FontAwesomeIcon icon="fa-solid fa-star" />;
-
->>>>>>> Stashed changes
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

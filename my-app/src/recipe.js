@@ -25,7 +25,7 @@ import {all_recipes} from "./recipe-conversion.js";
             <Item value={recipe.eggs_num} name="Eggs"/>
             <Item value={recipe.flour_cups} name="Flour (cups)"/>
             <Item value={recipe.ginger_tsp} name="Ginger (tsp)"/>
-            <Item value={recipe.honey_tbsp} name="Honey (tbsp):"/>
+            <Item value={recipe.honey_tbsp} name="Honey (tbsp)"/>
             <Item value={recipe.milk_cups} name="Milk (cups)"/>
             <Item value={recipe.nutmeg_tsp} name="Nutmeg (tsp)"/>
             <Item value={recipe.nuts_cups} name="Nuts (cups)"/>
