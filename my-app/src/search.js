@@ -39,9 +39,13 @@ const Search = () => {
       <div>
         <Checkbox name="Baking Powder (tsp)" handleChange={handleChange} />
         <Label name="Baking Powder (tsp)"/>
+        <QuantityBox />
+        <br></br>
 
         <Checkbox name="Baking Soda (tsp)" handleChange={handleChange} />
         <Label name="Baking Soda (tsp)"/>
+        <QuantityBox />
+        <br></br>
 
         <Checkbox name="Brown Sugar (cups)" handleChange={handleChange} />
         <Label name="Brown Sugar (cups)" />
@@ -119,7 +123,8 @@ const Search = () => {
     value={name}
     onChange={handleChange}
   />);
-  }
+  };
+
   const Label = ({ name }) => {
     return (
       <label>
@@ -127,6 +132,14 @@ const Search = () => {
       </label>
     );
   };
+
+  const QuantityBox = () => {
+    return (
+        <label>
+            How much do you have? <input name="quantity" type="text" inputmode="numeric" placeholder="0" />
+        </label>
+    )
+  }
   
   export default Search;
   
