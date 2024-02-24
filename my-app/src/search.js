@@ -1,114 +1,80 @@
 import React from 'react';
 
 const Search = () => {
-    const [userinfo, setUserInfo] = React.useState({
-        languages: [],
-        response: [],
-    });
+    const [inputs, setInputs] = React.useState({});
  
-    const handleChange = (e) => {
-        // Destructuring
-        const { value, checked } = e.target;
-        const { languages } = userinfo;
- 
-        console.log(`${value} is ${checked}`);
- 
-        // Case 1 : The user checks the box
-        if (checked) {
-            setUserInfo({
-                languages: [...languages, value],
-                response: [...languages, value],
-            });
-        }
- 
-        // Case 2  : The user unchecks the box
-        else {
-            setUserInfo({
-                languages: languages.filter(
-                    (e) => e !== value
-                ),
-                response: languages.filter(
-                    (e) => e !== value
-                ),
-            });
-        }
-    };
+    const handleChange = (event) => {};
 
-  
     return (
       <div>
-        <Checkbox name="Baking Powder (tsp)" handleChange={handleChange} />
-        <Label name="Baking Powder (tsp)"/>
-        <QuantityBox />
+        <QuantityBox name="baking powder" unit="tsp"/>
         <br></br>
 
-        <Checkbox name="Baking Soda (tsp)" handleChange={handleChange} />
-        <Label name="Baking Soda (tsp)"/>
-        <QuantityBox />
+        <QuantityBox name="baking soda" unit="tsp"/>
         <br></br>
 
-        <Checkbox name="Brown Sugar (cups)" handleChange={handleChange} />
-        <Label name="Brown Sugar (cups)" />
+        <QuantityBox name="brown sugar" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Butter (tbsp)" handleChange={handleChange} />
-        <Label name="Butter (tbsp)" />
+        <QuantityBox name="butter" unit="tbsp"/>
+        <br></br>
 
-        <Checkbox name="Chocolate Chips (cups)" handleChange={handleChange} />
-        <Label name="Chocolate Chips (cups)" />
+        <QuantityBox name="chocolate chips" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Cinnamon (tsp)" handleChange={handleChange} />
-        <Label name="Cinnamon (tsp)" />
+        <QuantityBox name="cinnamon" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Cream of Tartar (tsp)" handleChange={handleChange} />
-        <Label name="Cream of Tartar (tsp)" />
+        <QuantityBox name="cream of tartar" unit="tsp"/>
+        <br></br>
 
-        <Checkbox name="Cocoa Powder (cups)" handleChange={handleChange} />
-        <Label name="Cocoa Powder (cups)" />
+        <QuantityBox name="cocoa powder" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Cornstarch (tbsp)" handleChange={handleChange} />
-        <Label name="Cornstarch (tbsp)" />
+        <QuantityBox name="cornstarch" unit="tbsp"/>
+        <br></br>
+     
+        <QuantityBox name="eggs" unit="count"/>
+        <br></br>
 
-        <Checkbox name="Eggs" handleChange={handleChange} />
-        <Label name="Eggs" />
+        <QuantityBox name="flour" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Flour (cups)" handleChange={handleChange} />
-        <Label name="Flour (cups)"/>
+        <QuantityBox name="ginger" unit="tsp"/>
+        <br></br>
 
-        <Checkbox name="Ginger (tsp)" handleChange={handleChange} />
-        <Label name="Ginger (tsp)" />
+        <QuantityBox name="honey" unit="tbsp"/>
+        <br></br>
 
-        <Checkbox name="Honey (tbsp)" handleChange={handleChange} />
-        <Label name="Honey (tbsp)" />
+        <QuantityBox name="milk" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Milk (cups)" handleChange={handleChange} />
-        <Label name="Milk (cups)" />
+        <QuantityBox name="nutmeg" unit="tsp"/>
+        <br></br>
 
-        <Checkbox name="Nutmeg (tsp)" handleChange={handleChange} />
-        <Label name="Nutmeg (tsp)" />
+        <QuantityBox name="nuts" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Nuts (cups)" handleChange={handleChange} />
-        <Label name="Nuts (cups)" />
+        <QuantityBox name="oats" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Oats (cups)" handleChange={handleChange} />
-        <Label name="Oats (cups)" />
+        <QuantityBox name="oil" unit="tbsp"/>
+        <br></br>
 
-        <Checkbox name="Oil (tbsp)" handleChange={handleChange} />
-        <Label name="Oil (tbsp)" />
+        <QuantityBox name="raisins" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Raisins (cups)" handleChange={handleChange} />
-        <Label name="Raisins (cups)" />
+        <QuantityBox name="salt" unit="tsp"/>
+        <br></br>
 
-        <Checkbox name="Salt (tsp)" handleChange={handleChange} />
-        <Label name="Salt (tsp)" />
+        <QuantityBox name="sugar" unit="cups"/>
+        <br></br>
 
-        <Checkbox name="Sugar (cups)" handleChange={handleChange} />
-        <Label name="Sugar (cups)" />
+        <QuantityBox name="vanilla" unit="tsp"/>
+        <br></br>
 
-        <Checkbox name="Vanilla (tsp)" handleChange={handleChange} />
-        <Label name="Vanilla (tsp)" />
-
-        <Checkbox name="Water (cups)" handleChange={handleChange} />
-        <Label name="Water (cups)" />
+        <QuantityBox name="water" unit="cups"/>
+        <br></br>
 
         
         
@@ -133,10 +99,10 @@ const Search = () => {
     );
   };
 
-  const QuantityBox = () => {
+  const QuantityBox = ({name, unit, handleChange}) => {
     return (
         <label>
-            How much do you have? <input name="quantity" type="text" inputmode="numeric" placeholder="0" />
+            What is the amount of <b>{name}</b> you have (in {unit})? <input name={name} type="text" inputmode="numeric" placeholder="0" onChange={handleChange}/>
         </label>
     )
   }
