@@ -1,111 +1,102 @@
 import React from 'react';
 
 const Search = () => {
-    const [inputs, setInputs] = React.useState({});
+    const QuantityBox = ({name, unit, id}) => {
+        return (
+            <label>
+                What is the amount of <b>{name}</b> you have (in {unit})? 
+                <input name={name} type="text" inputMode="numeric" placeholder="0" onChange={handleChange} id={id}/>
+            </label>
+        )
+      }
+
+    const inputs = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
  
-    const handleChange = (event) => {};
+    const handleChange = (event) => {
+        console.log(event.target);
+        console.log(event.target.id);
+        console.log(event.target.value);
+        console.log(inputs);
+        inputs[event.target.id] = Number(event.target.value);
+        console.log(inputs);
+    };
 
     return (
-      <div>
-        <QuantityBox name="baking powder" unit="tsp"/>
+      <form>
+        <QuantityBox name="baking powder" unit="tsp" id={0}/>
         <br></br>
 
-        <QuantityBox name="baking soda" unit="tsp"/>
+        <QuantityBox name="baking soda" unit="tsp" id={1}/>
         <br></br>
 
-        <QuantityBox name="brown sugar" unit="cups"/>
+        <QuantityBox name="brown sugar" unit="cups" id={2}/>
         <br></br>
 
-        <QuantityBox name="butter" unit="tbsp"/>
+        <QuantityBox name="butter" unit="tbsp" id={3}/>
         <br></br>
 
-        <QuantityBox name="chocolate chips" unit="cups"/>
+        <QuantityBox name="chocolate chips" unit="cups" id={4}/>
         <br></br>
 
-        <QuantityBox name="cinnamon" unit="cups"/>
+        <QuantityBox name="cinnamon" unit="cups" id={5}/>
         <br></br>
 
-        <QuantityBox name="cream of tartar" unit="tsp"/>
+        <QuantityBox name="cream of tartar" unit="tsp" id={6}/>
         <br></br>
 
-        <QuantityBox name="cocoa powder" unit="cups"/>
+        <QuantityBox name="cocoa powder" unit="cups" id={7}/>
         <br></br>
 
-        <QuantityBox name="cornstarch" unit="tbsp"/>
+        <QuantityBox name="cornstarch" unit="tbsp" id={8}/>
         <br></br>
      
-        <QuantityBox name="eggs" unit="count"/>
+        <QuantityBox name="eggs" unit="count" id={9}/>
         <br></br>
 
-        <QuantityBox name="flour" unit="cups"/>
+        <QuantityBox name="flour" unit="cups" id={10}/>
         <br></br>
 
-        <QuantityBox name="ginger" unit="tsp"/>
+        <QuantityBox name="ginger" unit="tsp" id={11}/>
         <br></br>
 
-        <QuantityBox name="honey" unit="tbsp"/>
+        <QuantityBox name="honey" unit="tbsp" id={12}/>
         <br></br>
 
-        <QuantityBox name="milk" unit="cups"/>
+        <QuantityBox name="milk" unit="cups" id={13}/>
         <br></br>
 
-        <QuantityBox name="nutmeg" unit="tsp"/>
+        <QuantityBox name="nutmeg" unit="tsp" id={14}/>
         <br></br>
 
-        <QuantityBox name="nuts" unit="cups"/>
+        <QuantityBox name="nuts" unit="cups" id={15}/>
         <br></br>
 
-        <QuantityBox name="oats" unit="cups"/>
+        <QuantityBox name="oats" unit="cups" id={16}/>
         <br></br>
 
-        <QuantityBox name="oil" unit="tbsp"/>
+        <QuantityBox name="oil" unit="tbsp" id={17}/>
         <br></br>
 
-        <QuantityBox name="raisins" unit="cups"/>
+        <QuantityBox name="raisins" unit="cups" id={18}/>
         <br></br>
 
-        <QuantityBox name="salt" unit="tsp"/>
+        <QuantityBox name="salt" unit="tsp" id={19}/>
         <br></br>
 
-        <QuantityBox name="sugar" unit="cups"/>
+        <QuantityBox name="sugar" unit="cups" id={20}/>
         <br></br>
 
-        <QuantityBox name="vanilla" unit="tsp"/>
+        <QuantityBox name="vanilla" unit="tsp" id={21}/>
         <br></br>
 
-        <QuantityBox name="water" unit="cups"/>
+        <QuantityBox name="water" unit="cups" id={22}/>
         <br></br>
 
         
-        
-      </div>
-    );
-  };
-  
-  const Checkbox = ({name, handleChange}) => {
-    return (<input
-    className="form-check-input"
-    type="checkbox"
-    value={name}
-    onChange={handleChange}
-  />);
-  };
-
-  const Label = ({ name }) => {
-    return (
-      <label>
-        {name}
-      </label>
+        <input type="submit" />
+      </form>
     );
   };
 
-  const QuantityBox = ({name, unit, handleChange}) => {
-    return (
-        <label>
-            What is the amount of <b>{name}</b> you have (in {unit})? <input name={name} type="text" inputmode="numeric" placeholder="0" onChange={handleChange}/>
-        </label>
-    )
-  }
-  
   export default Search;
   

@@ -75,5 +75,3 @@ export function convertRecipe(recipe) {
     recipe.ginger_tsp, recipe.honey_tbsp, recipe.milk_cups, recipe.nutmeg_tsp, recipe.nuts_cups, recipe.oats_cups, recipe.oil_tbsp,
     recipe.raisins_cups, recipe.salt_tsp, recipe.sugar_cups, recipe.vanilla_tsp, recipe.water_cups];
 }
-
-export const all_recipes_vectors = all_recipes.map(convertRecipe);

@@ -3,7 +3,7 @@ import { angleBetween } from './linear-algebra.js';
 
 
 
-function sortRecipes(searchVector) {
+export function sortRecipes(searchVector) {
     return all_recipes.sort(function (a, b) { return (angleBetween(convertRecipe(a), searchVector)) - (angleBetween(convertRecipe(b), searchVector)) }
     );
 }
