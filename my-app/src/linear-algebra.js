@@ -20,7 +20,7 @@ function mag(v) {
     return Math.sqrt(sum);
 }
 
-export default function angleBetween(v1, v2) {
+export function angleBetween(v1, v2) {
     return Math.acos(dot(v1, v2) / (mag(v1) * mag(v2)));
 }
 

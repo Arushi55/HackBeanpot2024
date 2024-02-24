@@ -1,5 +1,5 @@
 import './recipe.css';
-import angleBetween from './linear-algebra.js';
+import './linear-algebra.js';
 
 const cake_recipe = {
     name: 'Cake',
@@ -84,7 +84,8 @@ const cake_recipe = {
       recipe.raisins_cups, recipe.salt_tsp, recipe.sugar_cups, recipe.vanilla_tsp, recipe.water_cups];
   }
 
-  console.log(angleBetween(convertRecipe(cake_recipe), convertRecipe(cupcake_recipe)));
+  //console.log(convertRecipe(cake_recipe));
+  //console.log(angleBetween(convertRecipe(cake_recipe), convertRecipe(cupcake_recipe)));
 
   export default function Recipe() {
     return (
