@@ -1,6 +1,6 @@
 import { convertRecipe } from './recipe-conversion.js';
 import { angleBetween } from './linear-algebra.js';
-import { all_recipes } from './recipe-conversion.js';
+import { all_recipes } from './all-recipes.js';
 
 
 function sortRecipes(searchVector) {
