@@ -1,5 +1,5 @@
 import './recipe.css';
-import {all_recipes} from "./recipe-conversion.js";
+import {all_recipes} from "./all-recipes.js";
   
   function Item({value, name}) {
     if (value !== 0) {
