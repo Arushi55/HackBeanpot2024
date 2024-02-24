@@ -67,15 +67,15 @@ const cake_recipe = {
     5. Slowly add the water to the batter and mix on low speed until well combined. Scrape down the sides of the bowl as needed to make sure everything is well combined. Please note that the batter will be very thin.\
     6. Fill the cupcake liners about half way and bake for 15-17 minutes, or until a toothpick comes out with a few moist crumbs. \
     7. Remove the cupcakes from oven and allow to cool for 2 minutes, then remove to a cooling rack to finish cooling."
-  }
+  };
 
   const all_recipes = [cake_recipe, cupcake_recipe];
 
   function Item({value, name}) {
     if (value != 0) {
-      return <li>{name}: {value}</li>
+      return <li>{name}: {value}</li>;
     }
-  }
+  };
 
   function convertRecipe(recipe) {
     return [recipe.baking_powder_tsp, recipe.baking_soda_tsp, recipe.brown_sugar_cups, recipe.butter_tbsp, recipe.choco_chips_cups,
