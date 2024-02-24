@@ -1,12 +1,65 @@
-import { all_recipes_vectors } from './recipe-conversion.js';
-import { angleBetween } from './linear-algebra.js';
+import React from 'react';
 
+const Search = () => {
+    const [userinfo, setUserInfo] = React.useState({
+        languages: [],
+        response: [],
+    });
+ 
+    const handleChange = (e) => {
+        // Destructuring
+        const { value, checked } = e.target;
+        const { languages } = userinfo;
+ 
+        console.log(`${value} is ${checked}`);
+ 
+        // Case 1 : The user checks the box
+        if (checked) {
+            setUserInfo({
+                languages: [...languages, value],
+                response: [...languages, value],
+            });
+        }
+ 
+        // Case 2  : The user unchecks the box
+        else {
+            setUserInfo({
+                languages: languages.filter(
+                    (e) => e !== value
+                ),
+                response: languages.filter(
+                    (e) => e !== value
+                ),
+            });
+        }
+    };
 
-function sortRecipes(searchVector) {
-    return all_recipes_vectors.sort(function (a, b) { return (angleBetween(a, searchVector)) - (angleBetween(b, searchVector)) }
+  
+    return (
+      <div>
+        <input
+          label="Flour (cups)"
+          type="checkbox"
+          value="Flour (cups)"
+          onChange={handleChange}
+        />
+        <input
+          label="Sugar (cups)"
+          type="checkbox"
+          value="Sugar (cups)"
+          onChange={handleChange}
+        />
+      </div>
     );
-}
-/*
-console.log(sortRecipes(
-    [1, 1, 4, 4, 34, 2, 23, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5, 3, 3, 3, 2, 5, 7]
-));*/
+  };
+  
+  const Checkbox = ({ label, value, onChange }) => {
+    return (
+      <label>
+        <input type="checkbox" checked={value} onChange={onChange} />
+        {label}
+      </label>
+    );
+  };
+  
+  export default Search;
