@@ -37,29 +37,96 @@ const Search = () => {
   
     return (
       <div>
-        <input
-          label="Flour (cups)"
-          type="checkbox"
-          value="Flour (cups)"
-          onChange={handleChange}
-        />
-        <input
-          label="Sugar (cups)"
-          type="checkbox"
-          value="Sugar (cups)"
-          onChange={handleChange}
-        />
+        <Checkbox name="Baking Powder (tsp)" handleChange={handleChange} />
+        <Label name="Baking Powder (tsp)"/>
+
+        <Checkbox name="Baking Soda (tsp)" handleChange={handleChange} />
+        <Label name="Baking Soda (tsp)"/>
+
+        <Checkbox name="Brown Sugar (cups)" handleChange={handleChange} />
+        <Label name="Brown Sugar (cups)" />
+
+        <Checkbox name="Butter (tbsp)" handleChange={handleChange} />
+        <Label name="Butter (tbsp)" />
+
+        <Checkbox name="Chocolate Chips (cups)" handleChange={handleChange} />
+        <Label name="Chocolate Chips (cups)" />
+
+        <Checkbox name="Cinnamon (tsp)" handleChange={handleChange} />
+        <Label name="Cinnamon (tsp)" />
+
+        <Checkbox name="Cream of Tartar (tsp)" handleChange={handleChange} />
+        <Label name="Cream of Tartar (tsp)" />
+
+        <Checkbox name="Cocoa Powder (cups)" handleChange={handleChange} />
+        <Label name="Cocoa Powder (cups)" />
+
+        <Checkbox name="Cornstarch (tbsp)" handleChange={handleChange} />
+        <Label name="Cornstarch (tbsp)" />
+
+        <Checkbox name="Eggs" handleChange={handleChange} />
+        <Label name="Eggs" />
+
+        <Checkbox name="Flour (cups)" handleChange={handleChange} />
+        <Label name="Flour (cups)"/>
+
+        <Checkbox name="Ginger (tsp)" handleChange={handleChange} />
+        <Label name="Ginger (tsp)" />
+
+        <Checkbox name="Honey (tbsp)" handleChange={handleChange} />
+        <Label name="Honey (tbsp)" />
+
+        <Checkbox name="Milk (cups)" handleChange={handleChange} />
+        <Label name="Milk (cups)" />
+
+        <Checkbox name="Nutmeg (tsp)" handleChange={handleChange} />
+        <Label name="Nutmeg (tsp)" />
+
+        <Checkbox name="Nuts (cups)" handleChange={handleChange} />
+        <Label name="Nuts (cups)" />
+
+        <Checkbox name="Oats (cups)" handleChange={handleChange} />
+        <Label name="Oats (cups)" />
+
+        <Checkbox name="Oil (tbsp)" handleChange={handleChange} />
+        <Label name="Oil (tbsp)" />
+
+        <Checkbox name="Raisins (cups)" handleChange={handleChange} />
+        <Label name="Raisins (cups)" />
+
+        <Checkbox name="Salt (tsp)" handleChange={handleChange} />
+        <Label name="Salt (tsp)" />
+
+        <Checkbox name="Sugar (cups)" handleChange={handleChange} />
+        <Label name="Sugar (cups)" />
+
+        <Checkbox name="Vanilla (tsp)" handleChange={handleChange} />
+        <Label name="Vanilla (tsp)" />
+
+        <Checkbox name="Water (cups)" handleChange={handleChange} />
+        <Label name="Water (cups)" />
+
+        
+        
       </div>
     );
   };
   
-  const Checkbox = ({ label, value, onChange }) => {
+  const Checkbox = ({name, handleChange}) => {
+    return (<input
+    className="form-check-input"
+    type="checkbox"
+    value={name}
+    onChange={handleChange}
+  />);
+  }
+  const Label = ({ name }) => {
     return (
       <label>
-        <input type="checkbox" checked={value} onChange={onChange} />
-        {label}
+        {name}
       </label>
     );
   };
   
   export default Search;
+  
