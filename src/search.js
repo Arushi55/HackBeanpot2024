@@ -24,8 +24,8 @@ const Search = () => {
         console.log(inputs);
     };
 
-    const {appState, setAppState} = useContext(AppContext);
-    
+    const {setAppState} = useContext(AppContext);
+
     const handleSubmit = (event) => {
         event.preventDefault();
         const newItems = sortRecipes(inputs);
