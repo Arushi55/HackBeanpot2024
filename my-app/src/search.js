@@ -24,7 +24,7 @@ const Search = () => {
 
     const handleSubmit = (event) => {
       event.preventDefault();
-      console.log(sortRecipes(inputs));
+      console.log(sortRecipes(inputs)); 
     }
 
     return (
@@ -99,7 +99,7 @@ const Search = () => {
         <br></br>
 
         
-        <input type="submit" />
+        <input type="submit" onClick={handleSubmit}/>
       </form>
     );
   };

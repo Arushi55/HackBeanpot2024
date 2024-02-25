@@ -4,8 +4,7 @@ import { all_recipes } from './all-recipes.js';
 
 
 function sortRecipes(searchVector) {
-    return all_recipes.sort(function (a, b) { return (angleBetween(convertRecipe(a), searchVector)) - (angleBetween(convertRecipe(b), searchVector)) }
-    );
+    return all_recipes.sort(function (a, b) { return (angleBetween(convertRecipe(a), searchVector)) - (angleBetween(convertRecipe(b), searchVector))});
 }
 
 export {sortRecipes};

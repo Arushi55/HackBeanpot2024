@@ -23,7 +23,7 @@ const cake_recipe = {
     sugar_cups: 1,
     vanilla_tsp: 2,
     water_cups: 0,
-    steps: "1. Gather all ingredients.\
+    steps: "1. Gather all ingredients. \
     2. Preheat the oven to 350 degrees F (175 degrees C). Grease and flour a 9-inch square cake pan. \
     3. Cream sugar and butter together in a mixing bowl. Add eggs, one at a time, beating briefly after each addition. Mix in vanilla. \
     4. Combine flour and baking powder in a separate bowl. Add to the wet ingredients and mix well. Add milk and stir until smooth. \
