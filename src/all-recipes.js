@@ -1,5 +1,5 @@
 const cake_recipe = {
-    name: 'Cake',
+    name: 'Vanilla Cake',
     baking_powder_tsp: 1.75,
     baking_soda_tsp: 0,
     brown_sugar_cups: 0,
@@ -33,7 +33,7 @@ const cake_recipe = {
 };
 
 const cupcake_recipe = {
-    name: 'Cupcake',
+    name: 'Vanilla Cupcakes',
     baking_powder_tsp: 3,
     baking_soda_tsp: 0,
     brown_sugar_cups: 0,
@@ -67,7 +67,7 @@ const cupcake_recipe = {
 };
 
 const cookie_recipe = {
-    name: 'Sugar Cookie',
+    name: 'Sugar Cookies',
     baking_powder_tsp: .5,
     baking_soda_tsp: 1,
     brown_sugar_cups: 0,
@@ -129,7 +129,7 @@ const choco_muffin_recipe = {
     4. Fill paper-lined muffin cups and bake for 20-25 minutes, or until domed and springy to the touch."};
 
 const donut_hole_recipe = {
-    name: 'Donut Hole Recipe',
+    name: 'Donut Holes',
     baking_powder_tsp: 3,
     baking_soda_tsp: 0,
     brown_sugar_cups: 0,
