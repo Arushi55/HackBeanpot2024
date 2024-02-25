@@ -15,12 +15,8 @@ input::-webkit-inner-spin-button {
 
 form {
     margin: 1rem 1.5rem 2rem;
-<<<<<<< Updated upstream
     padding: .75rem;
     background-color: rgb(253, 185, 51, 0.7);
-=======
-    padding: .5rem;
->>>>>>> Stashed changes
 }
 
 input[type=number] {
