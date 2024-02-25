@@ -1,5 +1,6 @@
 import './recipe.css';
-import {all_recipes} from "./all-recipes.js";
+import { useContext } from 'react';
+import { AppContext } from './AppContext.js';
   
   function Item({value, name}) {
     if (value !== 0) {
@@ -8,8 +9,9 @@ import {all_recipes} from "./all-recipes.js";
   }
 
   export default function Recipe() {
+    const {appState} = useContext(AppContext);
     return (
-      all_recipes.map(recipe =>
+      appState.inputs.map(recipe =>
       <div className="recipe-wrapper">
         <h1 className="recipe-name"> {recipe.name}</h1>
         <div className="recipe">

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { sortRecipes } from './sort-method.js';
+import { AppContext } from './AppContext.js';
+
 
 const Search = () => {
     const QuantityBox = ({name, unit, id}) => {
@@ -22,9 +24,15 @@ const Search = () => {
         console.log(inputs);
     };
 
+    const {appState, setAppState} = useContext(AppContext);
+    
     const handleSubmit = (event) => {
-      event.preventDefault();
-      console.log(sortRecipes(inputs)); 
+        event.preventDefault();
+        const newItems = sortRecipes(inputs);
+        console.log(newItems); 
+        setAppState((appState) => {
+            return {...appState, inputs: newItems};
+        })
     }
 
     return (
