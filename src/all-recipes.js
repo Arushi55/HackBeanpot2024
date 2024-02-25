@@ -197,6 +197,37 @@ const donut_hole_recipe = {
         6. Bake cookies until lightly browned around the edges, 10 to 12 minutes. \
         7. Transfer to flattened brown paper bags or wire racks to cool."};
 
+const pie_crust_recipe = {
+    name: 'Pie Crust',
+        baking_powder_tsp: 0,
+        baking_soda_tsp: 0,
+        brown_sugar_cups: 0,
+        butter_tbsp: 10,
+        choco_chips_cups: 0,
+        cinnamon_tsp: 0,
+        cream_tartar_tsp: 0,
+        cocoa_powder_cups: 0,
+        cornstarch_tbsp: 0,
+        eggs_num: 0,
+        flour_cups: 2.5,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: 0,
+        nutmeg_tsp: 0,
+        nuts_cups: 0,
+        oats_cups: 0,
+        oil_tbsp: 0,
+        raisins_cups: 0,
+        salt_tsp: 1,
+        sugar_cups: 0,
+        vanilla_tsp: 0,
+        water_cups: .5,
+        steps: "1. Whisk the flour and salt together in a large bowl. \
+        2. Add the butter and shortening. Cut the butter and shortening into the mixture until it resembles coarse meal.Do not overwork the ingredients. \
+        3. Drizzle the cold water in, 1 tbsp at a time, and stir after every tbsp has been added. Stop adding water when the dough begins to form large clumps.  \
+        4. Transfer the pie dough to a floured work surface. Using floured hands, fold the dough into itself until the flour is fully incorporated into the fats. The dough should come together easily and should not feel overly sticky. Avoid overworking the dough. \
+        5. Wrap each tightly in plastic wrap. Refrigerate for at least 2 hours and up to 5 days.\
+        6. After the dough has chilled for at least 2 hours, you can roll it out. \
+        7. Proceed as per pie instructions."};
 
-
-export const all_recipes = [cake_recipe, cupcake_recipe, cookie_recipe, choco_muffin_recipe, donut_hole_recipe, oatmeal_raisin_recipe];
+export const all_recipes = [cake_recipe, cupcake_recipe, cookie_recipe, choco_muffin_recipe, donut_hole_recipe, oatmeal_raisin_recipe, pie_crust_recipe];
