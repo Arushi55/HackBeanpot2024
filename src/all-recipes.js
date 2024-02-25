@@ -263,7 +263,7 @@ const brownie_recipe = {
         6. Remove and allow to cool to room temperature before slicing into 16 brownies." };
 
 const shortbread_recipe = {
-    name: 'Shortbread Cokies',
+    name: 'Shortbread Cookies',
         baking_powder_tsp: 0,
         baking_soda_tsp: 0,
         brown_sugar_cups: 0,
