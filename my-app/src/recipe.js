@@ -38,7 +38,7 @@ import {all_recipes} from "./all-recipes.js";
             <Item value={recipe.water_cups} name="Water (cups)"/>
             <br></br>
             <h3>Steps:</h3>
-            <li>{recipe.steps}</li>
+            <p>{recipe.steps}</p>
         </div>
       </div>)
     );
