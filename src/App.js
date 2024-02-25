@@ -11,11 +11,13 @@ function App() {
   return (
     <AppContext.Provider value={{ appState, setAppState }}>
       <div>
-        <div className='header'>
-          <h1 id="title">The Perfect Pantry</h1>
-          <h4 id="instructions">Tell us the amount of ingredients in your pantry, and we'll give you the recipe that most closely matches those ingredients!</h4>
+        <div className="search">
+          <div className='header'>
+            <h1 id="title">The Perfect Pantry</h1>
+            <h4 id="instructions">Tell us the amount of ingredients in your pantry, and we'll give you the recipe that most closely matches those ingredients!</h4>
+          </div>
+          <Search />
         </div>
-        <Search />
         <Recipe />
       </div>
     </AppContext.Provider>

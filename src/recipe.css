@@ -21,6 +21,11 @@ form {
     padding: 2rem;
     background-image: url("../public/sand.jpg");
     border-radius: 25px;
+    color: rgb(12, 91, 16)
+}
+
+.search {
+    
 }
 
 input[type=number] {
@@ -121,12 +126,15 @@ input[type=submit]:hover {
 
 #title {
     text-align: center;
-    font-size: 400%;
+    font-size: 500%;
     padding-bottom: 0rem;
+    padding-top: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: white;
+    text-shadow: 5px 2px rgb(83, 55, 3);
 }
-
+/*
 #title::before, #title::after {
     content: '';
     display: inline-block;
@@ -142,13 +150,21 @@ input[type=submit]:hover {
     margin-right: 0rem;
     margin-left: 2rem;
 }
+*/
 
 #instructions {
     font-size:115%;
     text-align: center;
+    margin-top: -2rem;
+    padding-bottom: 1rem;
 }
 
 .header {
+    background: rgba(250, 94, 73, 0.705);
+    background-image: url("../public/crab.svg");
+    background-size: 150px 140px;
+    background-repeat: repeat-x;
+    background-position: 0 50%;
     align-items: center;
     color:white;
     font-family: "Pangolin", cursive;
