@@ -230,4 +230,249 @@ const pie_crust_recipe = {
         6. After the dough has chilled for at least 2 hours, you can roll it out. \
         7. Proceed as per pie instructions."};
 
-export const all_recipes = [cake_recipe, cupcake_recipe, cookie_recipe, choco_muffin_recipe, donut_hole_recipe, oatmeal_raisin_recipe, pie_crust_recipe];
+const brownie_recipe = {
+    name: 'Brownies',
+        baking_powder_tsp: 0,
+        baking_soda_tsp: 0,
+        brown_sugar_cups: 0,
+        butter_tbsp: 8,
+        choco_chips_cups: 0,
+        cinnamon_tsp: 0,
+        cream_tartar_tsp: 0,
+        cocoa_powder_cups: .66,
+        cornstarch_tbsp: 0,
+        eggs_num: 2,
+        flour_cups: .5,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: 0,
+        nutmeg_tsp: 0,
+        nuts_cups: 0,
+        oats_cups: 0,
+        oil_tbsp: 1,
+        raisins_cups: 0,
+        salt_tsp: .25,
+        sugar_cups: 1.125,
+        vanilla_tsp: 2,
+        water_cups: 0,
+        steps: "1.Preheat oven to 350°F (175°C). Prepare an 8-inch square pan. \
+        2. Combine hot melted butter, oil and sugar together in a medium-sized bowl. Whisk well for about a minute. Add the eggs and vanilla; beat until lighter in color. \
+        3. Gently fold the dry ingredients into the wet ingredients until JUST combined. \
+        4. Pour batter into prepared pan, smoothing the top out evenly. \
+        5. Bake for 20-25 minutes, or until the centre of the brownies in the pan no longer jiggles and is just set to the touch. \
+        6. Remove and allow to cool to room temperature before slicing into 16 brownies." };
+
+const shortbread_recipe = {
+    name: 'Shortbread Cokies',
+        baking_powder_tsp: 0,
+        baking_soda_tsp: 0,
+        brown_sugar_cups: 0,
+        butter_tbsp: 16,
+        choco_chips_cups: 0,
+        cinnamon_tsp: 0,
+        cream_tartar_tsp: 0,
+        cocoa_powder_cups: 0,
+        cornstarch_tbsp: 0,
+        eggs_num: 0,
+        flour_cups: 2,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: 0,
+        nutmeg_tsp: 0,
+        nuts_cups: 0,
+        oats_cups: 0,
+        oil_tbsp: 0,
+        raisins_cups: 0,
+        salt_tsp: 0,
+        sugar_cups: .5,
+        vanilla_tsp: 0,
+        water_cups: 0,
+        steps: "1.Preheat oven to 325°. \
+        2. Cream butter and sugar until light and fluffy, 5-7 minutes. Gradually beat in flour. \
+        3. Press dough into an ungreased 9-in. square baking pan. Prick with a fork. \
+        4. Bake until light brown, 30-35 minutes. Cut into squares while warm. "};
+
+const blondie_recipe = {
+    name: 'Chocolate Chip Blondies',
+        baking_powder_tsp: .5,
+        baking_soda_tsp: 0,
+        brown_sugar_cups: 1.5,
+        butter_tbsp: 8,
+        choco_chips_cups: 1,
+        cinnamon_tsp: 0,
+        cream_tartar_tsp: 0,
+        cocoa_powder_cups: 0,
+        cornstarch_tbsp: 0,
+        eggs_num: 2,
+        flour_cups: 1.5,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: 0,
+        nutmeg_tsp: 0,
+        nuts_cups: 0,
+        oats_cups: 0,
+        oil_tbsp: 0,
+        raisins_cups: 0,
+        salt_tsp: .5,
+        sugar_cups: .5,
+        vanilla_tsp: 0,
+        water_cups: 0,
+        steps: "1. In a large bowl, combine the brown sugar, butter, eggs and vanilla just until blended. \
+        2. Combine the flour, baking powder and salt; add to brown sugar mixture. Stir in chocolate chips. \
+        3. Spread mixture into a greased 13x9-in. baking pan. Bake at 350° until a toothpick inserted in the center comes out clean, 18-20 minutes."};
+
+const cookie_stick_recipe = {
+    name: 'Cookie Sticks',
+        baking_powder_tsp: 0,
+        baking_soda_tsp: .5,
+        brown_sugar_cups: 1.5,
+        butter_tbsp: 0,
+        choco_chips_cups: 1,
+        cinnamon_tsp: 0,
+        cream_tartar_tsp: 0,
+        cocoa_powder_cups: 0,
+        cornstarch_tbsp: 0,
+        eggs_num: 1,
+        flour_cups: 1.5,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: 0,
+        nutmeg_tsp: 0,
+        nuts_cups: .5,
+        oats_cups: 0,
+        oil_tbsp: 8,
+        raisins_cups: 0,
+        salt_tsp: .5,
+        sugar_cups: .5,
+        vanilla_tsp: 1,
+        water_cups: 0,
+        steps: "1.In a large bowl, combine the oil, sugars, egg and vanilla. Combine the flour, baking soda and salt; gradually add to sugar mixture and mix well. Divide dough in half. \
+        2. On a greased baking sheet, shape each portion into a 15x3-in. rectangle about 3 in. apart. Sprinkle chocolate chips and, if desired, nuts over dough; press lightly. \
+        3. Bake at 375° for 6-7 minutes. (Bake for 8-9 minutes for crispier cookies.) Cool for 5 minutes."};
+
+const biscuit_recipe = {
+    name: 'Biscuits',
+        baking_powder_tsp: 4,
+        baking_soda_tsp: 0,
+        brown_sugar_cups: 0,
+        butter_tbsp: 8,
+        choco_chips_cups: 0,
+        cinnamon_tsp: 0,
+        cream_tartar_tsp: 0,
+        cocoa_powder_cups: 0,
+        cornstarch_tbsp: 0,
+        eggs_num: 1,
+        flour_cups: 2,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: .66,
+        nutmeg_tsp: 0,
+        nuts_cups: 0,
+        oats_cups: 0,
+        oil_tbsp: 0,
+        raisins_cups: 0,
+        salt_tsp: .5,
+        sugar_cups: .1,
+        vanilla_tsp: 0,
+        water_cups: 0,
+        steps: "1. In a bowl, whisk together dry ingredients.  Cut in shortening until the mixture resembles coarse crumbs. \
+        2. Whisk together egg and milk. Add to dry ingredients; stir just until moistened. Dough will be wet. \
+        3. On a well-floured surface, knead dough gently 8-10 times. Roll to 1/2-in. thickness; cut with a floured 2-1/2-in. biscuit cutter. Place on a lightly greased baking sheet. \
+        4. Bake until golden brown, 10-12 minutes."};
+
+const snickerdoodle_recipe = {
+    name: 'Snickerdoodles',
+        baking_powder_tsp: 0,
+        baking_soda_tsp: .25,
+        brown_sugar_cups: 0,
+        butter_tbsp: 8,
+        choco_chips_cups: 0,
+        cinnamon_tsp: 2,
+        cream_tartar_tsp: .25,
+        cocoa_powder_cups: 0,
+        cornstarch_tbsp: 0,
+        eggs_num: 1,
+        flour_cups: 1.5,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: 0,
+        nutmeg_tsp: 0,
+        nuts_cups: 0,
+        oats_cups: 0,
+        oil_tbsp: 0,
+        raisins_cups: 0,
+        salt_tsp: .25,
+        sugar_cups: 1,
+        vanilla_tsp: 0,
+        water_cups: 0,
+        steps: "1. Preheat oven to 375°. Cream butter and sugar until light and fluffy; beat in egg and vanilla. \
+        2.  In another bowl, whisk together flour, salt, baking soda and cream of tartar; gradually beat into creamed mixture. \
+        3. In a small bowl, combine sugar and cinnamon. Shape dough into 1-in. balls; roll in cinnamon sugar. Place 2 in. apart on ungreased baking sheets. \
+        4. Bake until light brown, 10-12 minutes. Remove from pans to wire racks to cool."};
+
+const crepe_recipe = {
+    name: 'Crepes',
+        baking_powder_tsp: 0,
+        baking_soda_tsp: 0,
+        brown_sugar_cups: 0,
+        butter_tbsp: 4,
+        choco_chips_cups: 0,
+        cinnamon_tsp: 0,
+        cream_tartar_tsp: 0,
+        cocoa_powder_cups: 0,
+        cornstarch_tbsp: 0,
+        eggs_num: 4,
+        flour_cups: 2,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: 2,
+        nutmeg_tsp: 0,
+        nuts_cups: 0,
+        oats_cups: 0,
+        oil_tbsp: 2,
+        raisins_cups: 0,
+        salt_tsp: .25,
+        sugar_cups: 0,
+        vanilla_tsp: 0,
+        water_cups: 0,
+        steps: "1. Pour flour and salt in a large bowl and make a well in the center. Add the eggs and the melted butter. \
+        2. Whisk vigorously starting from the center, and slowly pour in the milk, mixing as you pour, to keep the batter smooth. \
+        3. Heat a 15 cm/6-inch crepes pan and grease with oil using a piece of paper towel. \
+        4. Pour in a ladle of dough by tilting the pan in all directions to distribute the dough well. \
+        5. Heat until the surface is cooked, then flip the pancakes and cook the other surface for about a minute, or until the crepe becomes lightly blonde. "};
+
+const pancake_recipe = {
+    name: 'Pancakes',
+        baking_powder_tsp: 2,
+        baking_soda_tsp: 0,
+        brown_sugar_cups: 0,
+        butter_tbsp: 0,
+        choco_chips_cups: 0,
+        cinnamon_tsp: 0,
+        cream_tartar_tsp: 0,
+        cocoa_powder_cups: 0,
+        cornstarch_tbsp: 0,
+        eggs_num: 1,
+        flour_cups: 1,
+        ginger_tsp: 0,
+        honey_tbsp: 0,
+        milk_cups: 1,
+        nutmeg_tsp: 0,
+        nuts_cups: 0,
+        oats_cups: 0,
+        oil_tbsp: 2,
+        raisins_cups: 0,
+        salt_tsp: .25,
+        sugar_cups: .125,
+        vanilla_tsp: 0,
+        water_cups: 0,
+        steps: "1. In a small bowl, whisk together flour, sugar, baking powder, and salt. Set aside.\
+        2. In a medium bowl, whisk together milk, butter (or vegetable oil), and egg. \
+        3. Pour the dry ingredients to the milk mixture, and stir (do not overmix). \
+        4. Heat a large skillet or griddle over medium heat, and coat generously with vegetable oil. \
+        5. For each pancake, spoon 2 or 3 Tablespoons of batter onto skillet. Cook until the surface of pancakes have some bubbles, about 1 minute. \
+        6. Flip carefully with a thin spatula, and cook until brown on the underside, 1 to 2 minutes more."};
+
+export const all_recipes = [cake_recipe, cupcake_recipe, cookie_recipe, choco_muffin_recipe, donut_hole_recipe, oatmeal_raisin_recipe, 
+    pie_crust_recipe, brownie_recipe, shortbread_recipe, blondie_recipe, cookie_stick_recipe, biscuit_recipe, snickerdoodle_recipe,
+    crepe_recipe, pancake_recipe];
